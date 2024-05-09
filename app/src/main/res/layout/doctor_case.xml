@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingBottom="12dp"
+        android:id="@+id/cardViewDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/doctor_image_case"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doctorb"
+            android:clickable="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#E7E7E8"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/doctor_image_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/linear"
+            android:gravity="left"
+            android:layout_toLeftOf="@+id/check_favorite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor_name_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="NAME OF DOCOTR"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_gravity="left"
+                android:id="@+id/doctor_speciality_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPECIALITY OF DOCTOR"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp" />
+            <TextView
+
+                android:id="@+id/desciption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="NAME OF DOCOTR"
+                android:visibility="gone"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/check_favorite"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:button="@null"
+            android:background="@drawable/check"/>
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E7E7E8"/>
+</LinearLayout>
+

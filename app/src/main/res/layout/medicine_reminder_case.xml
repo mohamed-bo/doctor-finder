@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingBottom="12dp"
+            android:id="@+id/card_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/medicine_image_case"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/medicine_picture"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                />
+            <LinearLayout
+                android:layout_toRightOf="@id/medicine_image_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/linear"
+                android:layout_toLeftOf="@+id/editMedicine"
+                android:gravity="left"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/Medicine_name_case"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Name OF Medicine"
+                    android:textSize="13sp" />
+                <TextView
+
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="quantity"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/deleteMedicine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:id="@+id/editMedicine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_toLeftOf="@+id/deleteMedicine"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_margin="5dp">
+
+            </ImageView>
+        </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E7E7E8"/>
+    </LinearLayout>

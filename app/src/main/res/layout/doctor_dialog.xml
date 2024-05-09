@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/doctor_profile"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@android:color/background_light"
+        app:contentPadding="12dp"
+        app:cardCornerRadius="16dp"
+        android:elevation="20dp"
+        android:translationZ="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/doctorc"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#000"/>
+
+
+            <TextView
+
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/profile_speciality"
+                android:text="speciality"/>
+<View
+    android:layout_width="200dp"
+    android:layout_height="0.1dp"
+    android:layout_marginTop="@dimen/padding_16dp"
+    android:layout_marginBottom="@dimen/padding_16dp"
+    android:background="#808080"
+    />
+            <RelativeLayout
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/call_vector"
+                android:layout_gravity="left"
+                android:id="@+id/call_vector"
+                android:layout_centerVertical="true"
+                />
+<TextView
+    android:textColor="#000"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="056070801240"
+    android:textStyle="bold"
+    android:id="@+id/phone_number_profile"
+    android:paddingLeft="@dimen/padding_16dp"
+    android:textSize="18sp"
+    android:layout_toRightOf="@+id/call_vector"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:layout_centerVertical="true"
+    />
+            </RelativeLayout>
+            <View
+                android:layout_width="200dp"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/padding_16dp"
+                android:layout_marginBottom="@dimen/padding_16dp"
+                android:background="#808080"
+                />
+            <RelativeLayout
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gps_vector"
+                    android:layout_gravity="left"
+                    android:id="@+id/gps_vector"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/adresse_profile"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="8127 Del Monte St.
+North Augusta, SC 29841"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/gps_vector"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="200dp"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/padding_16dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080"
+                />
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/book_appointment_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/color_alarm"
+                />
+            <ImageView
+                android:id="@+id/call_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/color_call"
+                />
+                <ImageView
+                    android:id="@+id/gps_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/color_gps"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+1
+3
+4
+5
+7
+8
+9
+A
+B
+Baby
+Brother
+C
+D
+Dont like
+E
+F
+Friend
+G
+H
+Help
+House
+I
+J
+K
+L
+Like
+Love
+M
+Make
+More
+N
+Name
+No
+O OR 0
+P
+Pay
+Play
+Q
+R
+S
+Stop
+T
+U
+Unknown
+V OR 2
+W OR 6
+With
+X
+Y
+Yes
+Z
